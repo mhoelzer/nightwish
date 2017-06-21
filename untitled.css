@@ -1,0 +1,26 @@
+.container{
+	width: 300px;
+	height: 300px;
+	position: relative;
+	perspective: 1000px;
+}
+div #myCarousel {
+	width: 50%;
+	height: 50%;
+	position: absolute;
+	margin: 0;
+	display: block;
+	width: 186px;
+	height: 180px;
+	left: 10px;
+	top: 10px;
+	border: 2px solid black;
+}
+section div.carousel-inner img.fj{
+	float: center;
+	position: relative;
+	width: 50;
+	background-color: #fff;
+	border: #ccc solid 1px;
+	border-radius: 0.6em;
+}

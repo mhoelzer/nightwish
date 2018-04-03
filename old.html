@@ -1,0 +1,79 @@
+		<div class="contentWrapper">
+			<section id="albums">
+				<!-- album list -->
+				<h2>Albums</h2>
+				<div class="album">
+					<img src="./imgproject/album1.jpg" class="albumNum" alt="album" border="2px">
+					<a href="#"><i>Angels Fall First</i> (1997)</a>
+				</div>
+				<div class="album">
+					<img src="./imgproject/album2.jpg" class="albumNum" alt="album" border="2px">
+					<a href="#"><i>Oceanborn</i> (1998)</a>
+				</div>
+				<div class="album">
+					<img src="./imgproject/album3.jpg" class="albumNum" alt="album" border="2px">
+					<a href="#"><i>Wishmaster</i> (2000)</a>
+				</div>
+				<div class="album">
+					<img src="./imgproject/album4.jpg" class="albumNum" alt="album" border="2px">
+					<a href="#"><i>Century Child</i> (2002)</a>
+				</div>
+				<div class="album">
+					<img src="./imgproject/album5.jpg" class="albumNum" alt="album" border="2px">
+					<a href="#"><i>Once</i> (2004)</a>
+				</div>
+				<div class="album">
+					<img src="./imgproject/album6.jpg" class="albumNum" alt="album" border="2px">
+					<a href="#"><i>Dark Passion Play</i> (2007)</a>
+				</div>
+				<div class="album">
+					<img src="./imgproject/album7.jpg" class="albumNum" alt="album" border="2px">
+					<a href="#"><i>Imaginaerum</i> (2011)</a>
+				</div>
+				<div class="album">
+					<img src="./imgproject/album8.jpg" class="albumNum" alt="album" border="2px">
+					<a href="#"><i>Endless Forms Most Beautiful</i> (2015)</a>
+				</div>
+			</section>
+		</div>
+
+
+<!-- css -->
+
+div.contentWrapper{
+	margin-left : 10%;
+	margin-right : 10%;
+}
+/*section #albums {
+	background-color: rgba(251, 251, 243, 0.7);
+	margin: 0 0 2.0em;
+	padding: 1.5em 0 2.0em 1.5em;
+	display: inline-block;
+	border-radius: 2em;
+	box-shadow: 1px 1px 5px #777;
+}*/
+
+div.contentWrapper section div.album{
+	float: left;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+	margin: 0 0.5em 2.0em 0.5em;
+	padding: 1.0em;
+	background-color: #fff;
+	border: #ccc solid 1px;
+	border-radius: 0em;
+}
+div.contentWrapper section div.album img.albumNum{
+	width: 100%;
+	height: 100%;
+}
+div.contentWrapper section#albums a, section a:visited{
+	color: #C8BDAF;
+	text-decoration: underline;
+}
+div.contentWrapper section#albums a:hover{
+	color: #B6B6B4;
+	text-decoration: underline;
+}

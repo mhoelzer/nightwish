@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Music Sensation for Store Application</title>
-		<link rel="stylesheet" type="text/css" href="main.css">
+		<title>Music Sensation for Store Application: Bootstrap</title>
+		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="mainBTSTRP.css">
 	</head>
 	<body>
 		<header>
 		<link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
 			<div class="contentWrapper">
 				<!-- search and social media (put their stuff) header -->
-				<nav id="socialmedia">
+				<nav id="socialmedia" style="text-align: right;">
 					<ul>
 						<li><a href="https://www.facebook.com/nightwish" target="_blank"><img src="./imgproject/facebook.png"></a></li>
 						<li><a href="https://twitter.com/nightwishband" target="_blank"><img src="./imgproject/twitter.png"></a></li>
@@ -18,23 +24,16 @@
 					</ul>
 				</nav>
 				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<div class="clear"></div>
 				<!-- big title -->
 				<h1>Nightwish</h1>
  				<!-- navigation -->
 				<nav>
 					<ul>
-						<li><a href="file:///Users/michellehoelzer/Desktop/JavaScriptSummerStuff/Portfolio/MyStore/index.html#about">About</a></li>
+						<li><a href="file:///Users/michellehoelzer/Desktop/JavaScriptSummerStuff/Portfolio/MyStore/mainBTSTRP.html#about">About</a></li>
 						<li><a href="#">Music</a></li>
-						<li><a href="file:///Users/michellehoelzer/Desktop/JavaScriptSummerStuff/Portfolio/MyStore/index.html#albums">Albums</a></li>
-						<li><a href="file:///Users/michellehoelzer/Desktop/JavaScriptSummerStuff/Portfolio/MyStore/index.html#members">Members</a></li>
-						<li><a href="file:///Users/michellehoelzer/Desktop/JavaScriptSummerStuff/Portfolio/MyStore/index.html#comparison">Battle of the Vocalists</a></li>
+						<li><a href="file:///Users/michellehoelzer/Desktop/JavaScriptSummerStuff/Portfolio/MyStore/mainBTSTRP.html#myCarousel">Albums</a></li>
+						<li><a href="file:///Users/michellehoelzer/Desktop/JavaScriptSummerStuff/Portfolio/MyStore/mainBTSTRP.html#members">Members</a></li>
+						<li><a href="file:///Users/michellehoelzer/Desktop/JavaScriptSummerStuff/Portfolio/MyStore/mainBTSTRP.html#comparison">Battle of the Vocalists</a></li>
 						<li><a href="#">Contact</a></li>
 					</ul>
 				</nav>
@@ -56,26 +55,95 @@
 		<br>
 		<br>
 		<div class="clear"></div>
-		<div class="CSS_slideshow" id="albums" data-show-buttons="true" data-show-wrap-buttons="true" data-animation-style="slide" style="-moz-transition-duration: 0.3s; -webkit-transition-duration: 0.3s; transition-duration: 0.3s;">
-		    <h2>Albums</h2>
-		    <div class="CSS_slideshow_wrapper" >
-		       	<input class="checked" type="radio" name="css3slideshow" id="slide1" checked /><!--
-		       --><label for="slide1"><img src="./imgproject/album1.jpg" /><h4><a href="#"><i>Angels Fall First</i> (1997)</a></h4></label><!--
-		       --><input class="checked" type="radio" name="css3slideshow" id="slide2" /><!--
-		       --><label for="slide2"><img src="./imgproject/album2.jpg" /><h4><a href="#"><i>Oceanborn</i> (1998)</a></h4></label><!--
-		       --><input class="checked" type="radio" name="css3slideshow" id="slide3" /><!--
-		       --><label for="slide3"><img src="./imgproject/album3.jpg" /><h4><a href="#"><i>Wishmaster</i> (2000)</a></h4></label><!--
-		       --><input class="checked" type="radio" name="css3slideshow" id="slide4" /><!--
-		       --><label for="slide4"><img src="./imgproject/album4.jpg" /><h4><a href="#"><i>Century Child</i> (2002)</a></h4></label><!--
-		       --><input class="checked" type="radio" name="css3slideshow" id="slide5" /><!--
-		       --><label for="slide5"><img src="./imgproject/album5.jpg" /><h4><a href="#"><i>Once</i> (2004)</a></h4></label>
-		       <input class="checked" type="radio" name="css3slideshow" id="slide6" /><!--
-		       --><label for="slide6"><img src="./imgproject/album6.jpg" /><h4><a href="#"><i>Dark Passion Play</i> (2007)</a></h4></label> 
-		        <input class="checked" type="radio" name="css3slideshow" id="slide7" /><!--
-		       --><label for="slide7"><img src="./imgproject/album7.jpg" /><h4><a href="#"><i>Imaginaerum</i> (2011)</a></h4></label>  
-		        <input class="checked" type="radio" name="css3slideshow" id="slide8" /><!--
-		       --><label for="slide8"><img src="./imgproject/album8.jpg" /><h4><a href="#"><i>Endless Forms Most Beautiful</i> (2015)</a></h4></label> 
+		<div id="myCarousel" class="carousel slide col-md-2" data-ride="carousel" style="width: 100%; height: auto;">
+		  <!-- Indicators -->
+			<!--   <ol class="carousel-indicators">
+			    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			    <li data-target="#myCarousel" data-slide-to="1"></li>
+			    <li data-target="#myCarousel" data-slide-to="2"></li>
+			    <li data-target="#myCarousel" data-slide-to="3"></li>
+			    <li data-target="#myCarousel" data-slide-to="4"></li>
+			    <li data-target="#myCarousel" data-slide-to="5"></li>
+			    <li data-target="#myCarousel" data-slide-to="6"></li>
+			    <li data-target="#myCarousel" data-slide-to="7"></li>
+			</ol> -->
+
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner">
+		    <div class="item active">
+		      <img src="imgproject/album1copy.jpg" alt="album1" style="padding-left: 0px;  padding-right: 0px;">
+		      <div class="carousel-caption">
+		        <h5><a href="#"><i>Angels Fall First</i></a></h5>
+		        <p>1997</p>
+		      </div>
 		    </div>
+
+		    <div class="item">
+		      <img src="imgproject/album2.jpg" alt="album2">
+		      <div class="carousel-caption">
+		        <h5><a href="#"><i>Oceanborn</i></a></h5>
+		        <p>1998</p>
+		      </div>
+		    </div>
+
+		    <div class="item">
+		      <img src="imgproject/album3.jpg" alt="album3">
+		      <div class="carousel-caption">
+		        <h5><a href="#"><i>Wishmaster</i></a></h5>
+		        <p>2000</p>
+		      </div>
+		    </div>
+
+		    <div class="item">
+		      <img src="imgproject/album4.jpg" alt="album4">
+		      <div class="carousel-caption">
+		        <h5><a href="#"><i>Century Child</i></a></h5>
+		        <p>2002</p>
+		      </div>
+		    </div>
+
+		    <div class="item">
+		      <img src="imgproject/album5.jpg" alt="album5">
+		      <div class="carousel-caption">
+		        <h5><a href="#"><i>Once</i></a></h5>
+		        <p>2004</p>
+		      </div>
+		    </div>
+		    
+		    <div class="item">
+		      <img src="imgproject/album6.jpg" alt="album6">
+		      <div class="carousel-caption">
+		        <h5><a href="#"><i>Dark Passion Play</i></a></h5>
+		        <p>2007</p>
+		      </div>
+		    </div>
+		    
+		    <div class="item">
+		      <img src="imgproject/album7.jpg" alt="album7">
+		      <div class="carousel-caption">
+		        <h5><a href="#"><i>Imaginaerum</i></a></h5>
+		        <p>2011</p>
+		      </div>
+		    </div>
+
+		    <div class="item">
+		      <img src="imgproject/album8.jpg" alt="album8">
+		      <div class="carousel-caption">
+		        <h5><a href="#"><i>Endless Forms Most Beautiful</i></a></h5>
+		        <p>2015</p>
+		      </div>
+		    </div>
+		  </div>
+
+		  <!-- Left and right controls -->
+		  <a class="left carousel-control col-sm-1 col-sm-offset-4" href="#myCarousel" data-slide="prev">
+		    <span class="glyphicon glyphicon-circle-arrow-left"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="left carousel-control col-sm-1 col-sm-offset-6" href="#myCarousel" data-slide="next">
+		    <span class="glyphicon glyphicon-circle-arrow-right "></span>
+		    <span class="sr-only">Next</span>
+		  </a>
 		</div>
 		<br>
 		<br>		
@@ -84,54 +152,54 @@
 		<br>
 		<br>
 		<div class="clear"></div>
-		<div class="contentWrapA">
-			<section id="members">
+		<h2 class="col-md-2 col-sm-offset-5">Members</h2>
+		<div class="clear"></div>
+		<div class="container">
+			<div class="row">
 				<!-- title saying members -->
-				<h2>Members</h2>
 				<!-- fj, th, mh, ev, jn, td -->
-				<div class="panel1">
+				<div class="col-lg-4">
 					<img src="./imgproject/fj.jpg" class="groupMembers" alt="members" border="0" width="300px">
 					<h3>Floor Jansen</h3>
 					<h4>Lead Vocals</h4>
 					<button>Learn More</button>
 				</div>
-				<div class="panel2">
+				<div class="col-lg-4">
 					<img src="./imgproject/th.jpg" class="groupMembers" alt="members" border="0" width="300px">
 					<h3>Tuomas Holopainen</h3>
 					<h4>Keyboards, Piano, and Synthesizers</h4>
 					<button>Learn More</button>
 				</div>
-				<div class="panel3">
+				<div class="col-lg-4">
 					<img src="./imgproject/mh.jpg" class="groupMembers" alt="members" border="0" width="300px">
 					<h3>Marco Hietala</h3>
 					<h4>Bass, Vocals, and Acoustic Guitar</h4>
 					<button>Learn More</button>
 				</div>
-			</section>
+			</div>
 		</div>
 		<br>
-		<div class="contentWrapB">
-			<section id="members">
-				<!-- title saying members -->
-				<div class="panel4">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
 					<img src="./imgproject/ev.jpg" class="groupMembers" alt="members" border="0" width="300px" >
 					<h3>Emppu Vuorinen</h3>
 					<h4>Guitar and Bass</h4>
 					<button>Learn More</button>
 				</div>
-				<div class="panel5">
+				<div class="col-lg-4">
 					<img src="./imgproject/jn.jpg" class="groupMembers" alt="members" border="0" width="300px">
 					<h3>Jukka Nevalainen</h3>
 					<h4>Drums and Percussion</h4>
 					<button>Learn More</button>
 				</div>
-				<div class="panel6">
+				<div class="col-lg-4">
 					<img src="./imgproject/td.jpg" class="groupMembers" alt="members" border="0" width="300px">
 					<h3>Troy Donockley</h3>
 					<h4>Uilleann Pipes, Tin Whistle, Low Whistle, Guitars, Bouzouki, Bodhrán, and Backing Vocals</h4>
 					<button>Learn More</button>
 				</div>
-			</section>
+			</div>
 		</div>
 		<div class="clear"></div>	
 		<br>	

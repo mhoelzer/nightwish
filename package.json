@@ -10,11 +10,12 @@
   "dependencies": {
     "express": "^4.15.3"
   },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mhoelzer/nightwish.git"
   },
-  "author": "",
+  "author": "Michelle Hoelzer",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mhoelzer/nightwish/issues"
